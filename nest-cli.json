@@ -1,0 +1,12 @@
+{
+  "sourceRoot": "src",
+  "entryFile": "app",
+  "compilerOptions": {
+    "tsConfigPath": "tsconfig.build.json",
+    "deleteOutDir": true,
+    "plugins": [],
+    "collection": "@nestjs/schematics",
+    "assets": ["services/mail/templates"],
+    "watchAssets": true
+  }
+}

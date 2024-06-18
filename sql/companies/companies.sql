@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `company_ratings` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    account_Id VARCHAR(50) NOT NULL,
+    company_Id INT NOT NULL,
+    comment VARCHAR(1000) NOT NULL,
+    star VARCHAR(10) NOT NULL,
+    status INT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    Constraint FK_Accounts_Company_ratings FOREIGN KEY (account_id) REFERENCES accounts (id) ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+

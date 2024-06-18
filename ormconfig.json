@@ -1,0 +1,12 @@
+{
+    "type": "mariadb",
+    "host": "localhost",
+    "driver": "mariadb",
+    "port": "3306",
+    "username": "root",
+    "password": "123456",
+    "database": "test",
+    "synchronize": false,
+    "logging": true,
+    "entities": ["src/**/*.ts", "dist/**/*.js"]
+  }
